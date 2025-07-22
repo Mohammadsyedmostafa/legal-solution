@@ -84,3 +84,50 @@ nav ul li a{
     width: 400px;
     
 }
+
+/* main share */
+.section-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.section-description{
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+section{
+    margin-top: 100px;
+}
+/*  */
+.practice-box{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.practice-item{
+    padding: 30px 50px;
+    border: 1px solid rgba(112, 112, 112, 0.571);
+   
+}
+.practice-image{
+    justify-content: center;
+    margin-bottom: 0;
+    width: 20%;
+    margin-left: 80px;
+}
+.practice-item-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.practice-item-description{
+    margin-top: 10px;
+    text-align: center;
+}
