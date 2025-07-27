@@ -41,7 +41,15 @@ header,main{
 }
 /* header */
 .logo{
-    justify-content: space-between;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul {
     gap: 30px;
@@ -54,7 +62,9 @@ nav ul li a{
     color: #707070;
 }
 /* hero section */
-
+.hero-section{
+    margin-top: 100px;
+}
 .hero-title{
     font-size: 4rem;
     font-weight: 800;
@@ -277,4 +287,37 @@ footer nav ul li a{
     border-radius: 8px;
     border: none;
     padding-left: 10px;
+}
+
+/* responcive for smail device */
+@media screen and (max-width:576px){
+    body{
+        margin: 0;
+    }
+    .practice-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-section{
+        flex-direction: column;
+    }
+    header,main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo{
+        justify-content: space-between;
+        position: none;
+    }
+    .hero-title{
+        font-size: 2.75rem;
+    }
+    .practice-item {
+        padding: 20px;
+    }
+    .practice-image, .frame{
+        margin-left: 60px;
+    }
+    .hide-for-mobile, .nav-item{
+        display: none;
+    }
 }
